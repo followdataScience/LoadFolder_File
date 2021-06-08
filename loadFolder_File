@@ -1,0 +1,15 @@
+from tkinter import filedialog
+from tkinter import *
+   
+   
+   def openFolder(self):
+        root = Tk()
+        root.withdraw()
+        folder = filedialog.askdirectory()
+        self.ui.le_folder.setText(str(folder))
+
+    def openFile(self):
+        root = Tk()
+        root.withdraw()
+        file = filedialog.askopenfile()
+        self.ui.le_file.setText(str(file))
